@@ -1,0 +1,20 @@
+[project]
+name = "ml-and-ai-assignments"
+version = "0.1.0"
+description = "ML and AI assignments including Python basics focused on supply chain and warehouse management"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v"
+pythonpath = ["."]
